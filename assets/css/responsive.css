@@ -1,0 +1,669 @@
+/* Responsive Styles */
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1199px) {
+    .hero-content {
+        grid-template-columns: 1fr 350px;
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .navbar-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5rem 2rem 2rem;
+        gap: 1.5rem;
+        transition: var(--transition);
+        box-shadow: var(--shadow-xl);
+        z-index: 1001;
+    }
+    
+    .navbar-menu.active {
+        left: 0;
+    }
+    
+    .navbar-menu::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 280px;
+        width: calc(100vw - 280px);
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+        z-index: 1002;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .navbar-actions {
+        gap: 1rem;
+    }
+    
+    .phone-info {
+        display: none;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-form-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .cta-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .doctors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.125rem;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+    
+    .appointment-btn {
+        display: none;
+    }
+    
+    .hero {
+        padding: 4rem 0 2rem;
+        min-height: 90vh;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .btn-lg {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .advantage-card {
+        padding: 1.5rem;
+    }
+    
+    .advantage-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+    
+    .advantage-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .about {
+        padding: 3rem 0;
+    }
+    
+    .about-image img {
+        height: 300px;
+    }
+    
+    .services {
+        padding: 3rem 0;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    
+    .doctors {
+        padding: 3rem 0;
+    }
+    
+    .doctors-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .doctor-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .portfolio {
+        padding: 3rem 0;
+    }
+    
+    .portfolio-filters {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .filter-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .portfolio-item {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .cta {
+        padding: 3rem 0;
+    }
+    
+    .cta-text h2 {
+        font-size: 1.875rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .cta-text p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .section-title::after {
+        width: 40px;
+        height: 3px;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 575px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-form-card {
+        padding: 1.5rem;
+    }
+    
+    .hero-form-card h3 {
+        font-size: 1.125rem;
+    }
+    
+    .advantage-card {
+        padding: 1.25rem;
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.125rem;
+    }
+    
+    .service-image {
+        height: 180px;
+    }
+    
+    .doctor-image {
+        height: 250px;
+    }
+    
+    .portfolio-before-after {
+        height: 200px;
+    }
+    
+    .portfolio-before-after::after {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.65rem 1.25rem;
+    }
+    
+    .btn-lg {
+        font-size: 0.875rem;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .cta-text h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile Extra Small */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-form-card {
+        padding: 1.25rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    .mobile-menu-toggle span {
+        width: 20px;
+    }
+    
+    .advantage-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .advantage-icon img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .service-number {
+        width: 35px;
+        height: 35px;
+        font-size: 0.875rem;
+    }
+    
+    .portfolio-filters {
+        gap: 0.4rem;
+    }
+    
+    .filter-btn {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.7rem;
+    }
+    
+    .modal-content {
+        padding: 1.25rem;
+        margin: 0.5rem;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo,
+    .advantage-icon img,
+    .service-image img,
+    .doctor-image img,
+    .portfolio-before-after img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Landscape Phones */
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-actions {
+        flex-direction: row;
+    }
+    
+    .btn-lg {
+        width: auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .mobile-menu-toggle,
+    .hero-actions,
+    .btn,
+    .scroll-top,
+    .modal {
+        display: none !important;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-form-card {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .section-title {
+        font-size: 18pt;
+        margin-bottom: 1rem;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .advantage-card,
+    .service-card,
+    .doctor-card,
+    .portfolio-item {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .animate-fadeInUp,
+    .animate-fadeInLeft,
+    .animate-fadeInRight {
+        animation: none;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #0f172a;
+        --bg-secondary: #1e293b;
+        --bg-accent: #334155;
+        --text-primary: #f1f5f9;
+        --text-secondary: #cbd5e1;
+        --border-color: #475569;
+    }
+    
+    .hero-overlay {
+        background: linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.9) 0%,
+            rgba(30, 41, 59, 0.8) 100%
+        );
+    }
+}
+
+/* Focus Styles for Accessibility */
+@media (any-hover: hover) {
+    .btn:focus-visible,
+    .nav-link:focus-visible,
+    .social-link:focus-visible,
+    .filter-btn:focus-visible {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .social-link {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    .filter-btn {
+        min-height: 44px;
+        padding: 0.75rem 1rem;
+    }
+    
+    .service-btn {
+        min-height: 44px;
+    }
+    
+    .mobile-menu-toggle {
+        padding: 0.75rem;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* Hover Effects for Desktop Only */
+@media (hover: hover) and (pointer: fine) {
+    .advantage-card:hover,
+    .service-card:hover,
+    .doctor-card:hover,
+    .portfolio-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .btn-primary:hover,
+    .btn-accent:hover {
+        transform: translateY(-2px);
+    }
+    
+    .social-link:hover,
+    .scroll-top:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .btn-primary,
+    .btn-accent {
+        border: 2px solid currentColor;
+    }
+    
+    .advantage-card,
+    .service-card,
+    .doctor-card,
+    .portfolio-item {
+        border: 2px solid var(--border-color);
+    }
+    
+    .nav-link::after {
+        height: 3px;
+    }
+}

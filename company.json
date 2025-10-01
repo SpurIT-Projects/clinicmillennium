@@ -1,0 +1,60 @@
+{
+  "full_name": "ООО \"Клиника Миллениум\"",
+  "UNP": "193625776",
+  "brand_name": "Клиника Миллениум",
+  "address": {
+    "full": "220116, Республика Беларусь, г. Минск, ул. Алибегова, 12",
+    "street": "ул. Алибегова, 12",
+    "city": "Минск",
+    "country": "Республика Беларусь",
+    "postal_code": "220116"
+  },
+  "phones": {
+    "main": "+375 (17) 360-90-70",
+    "mobile": [
+      "+375 (29) 616-90-70",
+      "+375 (33) 616-90-70"
+    ],
+    "short_number": "7790",
+    "international": [
+      {
+        "country": "Литва",
+        "number": "+370 520 80 623"
+      },
+      {
+        "country": "Латвия", 
+        "number": "+371 258 920 71"
+      },
+      {
+        "country": "Польша",
+        "number": "+48 222 304 182"
+      }
+    ],
+    "english_speaking": "+375 (29) 399-90-70"
+  },
+  "emails": [
+    "mclinic.client@gmail.com",
+    "millennium.cliniс.by@gmail.com"
+  ],
+  "years_in_business": 8,
+  "founded": 2017,
+  "license": {
+    "number": "М-8546",
+    "date_issued": "30.01.2023",
+    "registry_number": "32230000076919"
+  },
+  "director": "Белоус Марина Владимировна",
+  "registration": {
+    "date": "06.05.2022",
+    "authority": "Инспекция МНС по Московскому району г.Минска",
+    "status": "Действующий"
+  },
+  "business_activity": "Стоматологическая деятельность",
+  "okved_code": "86230",
+  "verified_sources": [
+    "https://clinicmillennium.by/",
+    "https://kartoteka.by/unp-193625776",
+    "https://normativka.by/lib/unp/193625776",
+    "https://clinicmillennium.by/publichnyij-dogovor/"
+  ]
+}

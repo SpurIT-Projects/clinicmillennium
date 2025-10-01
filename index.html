@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Стоматология "Клиника Миллениум" в Минске - Лучшие стоматологи, современное оборудование</title>
+    <meta name="description" content="Стоматологическая клиника Миллениум в Минске. 17 опытных врачей, финское оборудование PLANMECA, 9000+ довольных пациентов. Запись на прием: 7790">
+    <meta name="keywords" content="стоматология, зубы, лечение зубов, имплантация, брекеты, виниры, Минск, Клиника Миллениум">
+    <meta name="author" content="ООО Клиника Миллениум">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Стоматология Клиника Миллениум - Лучшие стоматологи в Минске">
+    <meta property="og:description" content="Профессиональное стоматологическое лечение в Минске. 17 опытных врачей, современное оборудование, 9000+ довольных пациентов.">
+    <meta property="og:url" content="https://clinicmillennium.by/">
+    <meta property="og:image" content="https://clinicmillennium.by/assets/images/clinic-main.jpg">
+    <meta property="og:locale" content="ru_BY">
+    <meta property="og:site_name" content="Клиника Миллениум">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Стоматология Клиника Миллениум - Лучшие стоматологи в Минске">
+    <meta name="twitter:description" content="Профессиональное стоматологическое лечение в Минске. 17 опытных врачей, современное оборудование, 9000+ довольных пациентов.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <img src="https://clinicmillennium.by/assets/img/logo.png" alt="Клиника Миллениум" class="logo">
+                    <span class="brand-text">Клиника Миллениум</span>
+                </div>
+                
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#about" class="nav-link">О клинике</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#doctors" class="nav-link">Врачи</a></li>
+                    <li><a href="#portfolio" class="nav-link">Работы</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                
+                <div class="navbar-actions">
+                    <div class="phone-info">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span class="phone-main">7790</span>
+                            <span class="phone-desc">Короткий номер</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary appointment-btn" onclick="openAppointmentModal()">
+                        Записаться на прием
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://clinicmillennium.by/assets/img/about_clinic.webp" alt="Клиника Миллениум интерьер" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Стоматология<br>
+                        <span class="brand-highlight">"Клиника Миллениум"</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Предоставляем комплексные стоматологические услуги для всей семьи
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">9000+</div>
+                            <div class="stat-label">Довольных пациентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Кабинетов с финским оборудованием PLANMECA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">17</div>
+                            <div class="stat-label">Врачей с опытом работы более 10 лет</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg" onclick="openAppointmentModal()">
+                            <i class="fas fa-calendar-check"></i>
+                            Записаться на прием
+                        </button>
+                        <button class="btn btn-secondary btn-lg" onclick="scrollToSection('about')">
+                            <i class="fas fa-info-circle"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-form-card">
+                    <h3>Бесплатный анализ вашего 3D-снимка</h3>
+                    <p>Наши специалисты проведут детальный анализ ваших 3D-снимков для точной диагностики и эффективного лечения.</p>
+                    <form class="consultation-form" onsubmit="submitConsultationForm(event)">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <button type="submit" class="btn btn-accent">
+                            Получить консультацию
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img src="https://clinicmillennium.by/img/pluses/9.svg" alt="Прогрессивность">
+                    </div>
+                    <h3>Прогрессивность</h3>
+                    <p>Передовые технологии, материалы высокого качества</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img src="https://clinicmillennium.by/img/pluses/16.svg" alt="Универсальность">
+                    </div>
+                    <h3>Универсальность</h3>
+                    <p>Оказание полного спектра услуг в одном месте</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img src="https://clinicmillennium.by/img/pluses/11.svg" alt="Врачи-специалисты">
+                    </div>
+                    <h3>Врачи-специалисты</h3>
+                    <p>Профессиональное лечение и помощь на высшем уровне</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img src="https://clinicmillennium.by/img/pluses/12.svg" alt="Атмосфера">
+                    </div>
+                    <h3>Атмосфера</h3>
+                    <p>Дружелюбная и теплая атмосфера в клинике</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://clinicmillennium.by/assets/img/about_clinic.webp" alt="О клинике Миллениум">
+                </div>
+                
+                <div class="about-text">
+                    <h2 class="section-title">О клинике</h2>
+                    <p class="about-subtitle">
+                        Мы работаем с 2017 года и каждый день принимаем более 50 пациентов
+                    </p>
+                    
+                    <div class="about-description">
+                        <p>
+                            Наша клиника обеспечена всем необходимым для качественного и комфортного лечения. 
+                            Мы используем современное оборудование международного класса. Вам готовы помочь 
+                            17 опытных врачей – профессионалов в своей специальности.
+                        </p>
+                        
+                        <p>
+                            Вам подберут именно того специалиста, который точно сможет решить вашу проблему. 
+                            Мы способствуем росту наших сотрудников и постоянному обучению их заграницей: 
+                            в Финляндии, Германии, Швейцарии и странах СНГ.
+                        </p>
+                        
+                        <div class="director-info">
+                            <p><strong>Директор Клиники Миллениум:</strong></p>
+                            <p>Белоус Марина Владимировна</p>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">
+                        Наши услуги
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Услуги клиники</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-image">
+                        <img src="https://clinicmillennium.by/img/services/therapy-CvuklGz1.webp" alt="Терапевтическая стоматология">
+                    </div>
+                    <h3>Терапевтическая стоматология</h3>
+                    <p>Наши врачи позаботятся о вашем здоровье, удаляя кариес, леча корни зубов, и занимаясь проблемами с деснами.</p>
+                    <button class="service-btn">Подробнее</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <div class="service-image">
+                        <img src="https://clinicmillennium.by/img/services/pediatric-dentistry-BZrY8Jro.webp" alt="Детская стоматология">
+                    </div>
+                    <h3>Детская стоматология</h3>
+                    <p>Мы заботимся о здоровье улыбки вашего малыша. Создаем комфортное впечатление и положительный опыт.</p>
+                    <button class="service-btn">Подробнее</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-image">
+                        <img src="https://clinicmillennium.by/img/services/surgical-dent-CAB9NIqG.webp" alt="Хирургическая стоматология">
+                    </div>
+                    <h3>Хирургическая стоматология</h3>
+                    <p>Удаление зубов любой сложности, установка имплантов, коррекция десен, увеличение объема кости.</p>
+                    <button class="service-btn">Подробнее</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <div class="service-image">
+                        <img src="https://clinicmillennium.by/img/services/orthopedics-B9EZdFOJ.webp" alt="Ортопедическая стоматология">
+                    </div>
+                    <h3>Ортопедическая стоматология</h3>
+                    <p>Восстановление работы зубов и челюстей, решение проблем с жеванием, протезы и виниры.</p>
+                    <button class="service-btn">Подробнее</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">05</div>
+                    <div class="service-image">
+                        <img src="https://clinicmillennium.by/img/services/orthodontic-dentistry-G8jqUZqM.webp" alt="Ортодонтическая стоматология">
+                    </div>
+                    <h3>Ортодонтическая стоматология</h3>
+                    <p>Исправление неправильного расположения зубов, коррекция прикуса с помощью брекет-систем.</p>
+                    <button class="service-btn">Подробнее</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">06</div>
+                    <div class="service-image">
+                        <img src="https://clinicmillennium.by/img/services/3d-snapshot-BNJIS6CU.webp" alt="Рентгенологическая диагностика">
+                    </div>
+                    <h3>Рентгенологическая диагностика</h3>
+                    <p>Метод, позволяющий врачам видеть внутренние проблемы зубов и челюстей через рентгеновские снимки.</p>
+                    <button class="service-btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <h2 class="section-title">Врачи-специалисты</h2>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://clinicmillennium.by/img/doctors/10.webp" alt="Врач стоматолог">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Стоматолог-терапевт</h3>
+                        <p>Опыт работы более 10 лет</p>
+                        <div class="doctor-specialties">
+                            <span class="specialty">Лечение кариеса</span>
+                            <span class="specialty">Эндодонтия</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://clinicmillennium.by/img/doctors/11.webp" alt="Врач стоматолог">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Стоматолог-хирург</h3>
+                        <p>Опыт работы более 15 лет</p>
+                        <div class="doctor-specialties">
+                            <span class="specialty">Имплантация</span>
+                            <span class="specialty">Хирургия</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://clinicmillennium.by/img/doctors/1.webp" alt="Врач стоматолог">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Стоматолог-ортодонт</h3>
+                        <p>Опыт работы более 12 лет</p>
+                        <div class="doctor-specialties">
+                            <span class="specialty">Брекеты</span>
+                            <span class="specialty">Исправление прикуса</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Работы наших врачей</h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="implants">Имплантация</button>
+                <button class="filter-btn" data-filter="orthodontics">Ортодонтия</button>
+                <button class="filter-btn" data-filter="prosthetics">Протезирование</button>
+                <button class="filter-btn" data-filter="veneers">Виниры</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="orthodontics">
+                    <div class="portfolio-before-after">
+                        <img src="https://clinicmillennium.by/img/works/eddf2f545754c25bdfdfd01df14ba3c5.webp" alt="До" class="before">
+                        <img src="https://clinicmillennium.by/img/works/afc6a6d29e2a4182d27687c996f832e9.webp" alt="После" class="after">
+                    </div>
+                    <h3>Керамические брекеты (лигатурные)</h3>
+                </div>
+                
+                <div class="portfolio-item" data-category="orthodontics">
+                    <div class="portfolio-before-after">
+                        <img src="https://clinicmillennium.by/img/works/b8209fe497a880e86deb89c66deba8c3.webp" alt="До" class="before">
+                        <img src="https://clinicmillennium.by/img/works/58ecbd537c139f80b2964e33ea7dd0e1.webp" alt="После" class="after">
+                    </div>
+                    <h3>Классические металлические брекеты</h3>
+                </div>
+                
+                <div class="portfolio-item" data-category="implants">
+                    <div class="portfolio-before-after">
+                        <img src="https://clinicmillennium.by/img/works/029792d8b584ed7de8b23d4397ff7c7a.webp" alt="До" class="before">
+                        <img src="https://clinicmillennium.by/img/works/efd8f76ac1d4a96b7794ebd4e7cd4c80.webp" alt="После" class="after">
+                    </div>
+                    <h3>Имплантация All-on-4</h3>
+                </div>
+                
+                <div class="portfolio-item" data-category="veneers">
+                    <div class="portfolio-before-after">
+                        <img src="https://clinicmillennium.by/webp/img/works/3.jpg.webp" alt="До" class="before">
+                        <img src="https://clinicmillennium.by/webp/img/works/4.jpg.webp" alt="После" class="after">
+                    </div>
+                    <h3>Виниры, пресс-керамика</h3>
+                </div>
+                
+                <div class="portfolio-item" data-category="prosthetics">
+                    <div class="portfolio-before-after">
+                        <img src="https://clinicmillennium.by/img/works/5a48ec32b07e056bbcdcc7fb471f55f6.webp" alt="До" class="before">
+                        <img src="https://clinicmillennium.by/img/works/f007c265936310826fcedba23745d2c9.webp" alt="После" class="after">
+                    </div>
+                    <h3>Коронки</h3>
+                </div>
+                
+                <div class="portfolio-item" data-category="implants">
+                    <div class="portfolio-before-after">
+                        <img src="https://clinicmillennium.by/img/works/2256058dc8ba540c04e41fd7c9ac8c3a.webp" alt="До" class="before">
+                        <img src="https://clinicmillennium.by/img/works/4438e04a481694a2edc53c7d087d0009.webp" alt="После" class="after">
+                    </div>
+                    <h3>Установка имплантов Osstem</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Онлайн-консультация</h2>
+                    <p>Заполните форму и наш администратор перезвонит вам в ближайшее время</p>
+                </div>
+                <div class="cta-form">
+                    <form class="appointment-form" onsubmit="submitAppointmentForm(event)">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <select>
+                            <option value="">Выберите услугу</option>
+                            <option value="therapy">Терапия</option>
+                            <option value="surgery">Хирургия</option>
+                            <option value="orthodontics">Ортодонтия</option>
+                            <option value="prosthetics">Протезирование</option>
+                            <option value="implants">Имплантация</option>
+                        </select>
+                        <button type="submit" class="btn btn-accent btn-lg">
+                            Записаться на прием
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://clinicmillennium.by/assets/img/logo.png" alt="Клиника Миллениум" class="logo">
+                        <span>Клиника Миллениум</span>
+                    </div>
+                    <p class="footer-description">
+                        Современная стоматологическая клиника в Минске. 
+                        Качественное лечение зубов с использованием передовых технологий.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Терапевтическая стоматология</a></li>
+                        <li><a href="#">Хирургическая стоматология</a></li>
+                        <li><a href="#">Ортодонтическое лечение</a></li>
+                        <li><a href="#">Имплантация зубов</a></li>
+                        <li><a href="#">Протезирование</a></li>
+                        <li><a href="#">Детская стоматология</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Минск, ул. Алибегова, 12</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>7790 (короткий номер)</span>
+                                <span>+375 (17) 360-90-70</span>
+                                <span>+375 (29) 616-90-70</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mclinic.client@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Ежедневно: 8:00 - 21:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Документы</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Публичный договор</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Лицензия №М-8546</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>© 2024 ООО "Клиника Миллениум". УНП: 193625776</p>
+                    <p>Лицензия на осуществление медицинской деятельности №М-8546 от 30.01.2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal for Appointment -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeAppointmentModal()">&times;</span>
+            <h2>Запись на прием</h2>
+            <form class="modal-form" onsubmit="submitModalForm(event)">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email">
+                <select required>
+                    <option value="">Выберите услугу</option>
+                    <option value="consultation">Консультация</option>
+                    <option value="therapy">Лечение</option>
+                    <option value="surgery">Хирургия</option>
+                    <option value="orthodontics">Ортодонтия</option>
+                    <option value="prosthetics">Протезирование</option>
+                </select>
+                <textarea placeholder="Дополнительная информация"></textarea>
+                <button type="submit" class="btn btn-primary btn-lg">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components.js"></script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://clinicmillennium.by/",
+        "name": "Клиника Миллениум",
+        "legalName": "ООО \"Клиника Миллениум\"",
+        "description": "Современная стоматологическая клиника в Минске. Качественное лечение зубов с использованием передовых технологий.",
+        "url": "https://clinicmillennium.by/",
+        "telephone": ["+375173609070", "+375296169070", "+375336169070"],
+        "email": "mclinic.client@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Алибегова, 12",
+            "addressLocality": "Минск",
+            "addressCountry": "BY",
+            "postalCode": "220116"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "53.9045398",
+            "longitude": "27.5615244"
+        },
+        "openingHours": "Mo-Su 08:00-21:00",
+        "foundingDate": "2017",
+        "founder": {
+            "@type": "Person",
+            "name": "Белоус Марина Владимировна"
+        },
+        "taxID": "193625776",
+        "leiCode": "М-8546",
+        "medicalSpecialty": [
+            "Стоматология",
+            "Терапевтическая стоматология", 
+            "Хирургическая стоматология",
+            "Ортодонтия",
+            "Ортопедическая стоматология",
+            "Детская стоматология",
+            "Имплантология"
+        ],
+        "priceRange": "$$",
+        "currenciesAccepted": "BYN",
+        "paymentAccepted": ["Cash", "Credit Card"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "500"
+        },
+        "sameAs": [
+            "https://www.facebook.com/clinicmillennium",
+            "https://www.instagram.com/clinicmillennium"
+        ]
+    }
+    </script>
+</body>
+</html>
